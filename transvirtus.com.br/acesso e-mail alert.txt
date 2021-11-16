@@ -1,4 +1,0 @@
-$mail->Username = 'correiosistema97@gmail.com';
-$mail->Password = 'Soldimais97';
-
-
