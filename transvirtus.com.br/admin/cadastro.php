@@ -93,10 +93,10 @@ if ( $login_array == $login ){
             //Porta de saida de e-mail 
             $Mailer->Port = 465;
             //Dados do e-mail de saida - autenticação
-            $Mailer->Username = 'correiosistema97@gmail.com';
-            $Mailer->Password = 'Soldimais97';
+            $Mailer->Username = '';
+            $Mailer->Password = '';
             //E-mail remetente (deve ser o mesmo de quem fez a autenticação)
-            $Mailer->From = 'correiosistema97@gmail.com';
+            $Mailer->From = '';
             //Nome do Remetente
             $Mailer->FromName = 'Sistema Transvirtus | Cadastro!';
             //Assunto da mensagem
