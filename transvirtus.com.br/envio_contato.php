@@ -40,14 +40,14 @@ if (mysqli_query($conn, $sql)){
             $Mailer->SMTPAutoTLS = false;
             $Mailer->SMTPSecure = false;
             //nome do servidor
-            $Mailer->Host = 'mail.transvirtus.x10.mx';
+            $Mailer->Host = '';
             //Porta de saida de e-mail 
             $Mailer->Port = 25;
             //Dados do e-mail de saida - autenticação
-            $Mailer->Username = 'alert@transvirtus.x10.mx';
-            $Mailer->Password = 'NE0geMWT';
+            $Mailer->Username = '';
+            $Mailer->Password = '';
             //E-mail remetente (deve ser o mesmo de quem fez a autenticação)
-            $Mailer->From = 'alert@transvirtus.x10.mx';
+            $Mailer->From = '';
             //Nome do Remetente
             $Mailer->FromName = 'Sistema Transvirtus | Contato!';
             //Assunto da mensagem
@@ -64,7 +64,7 @@ if (mysqli_query($conn, $sql)){
                           </body>
                             </html>";
     //Destinatario 
-     $Mailer->AddAddress('correiosistema@gmail.com');
+     $Mailer->AddAddress('');
     if($Mailer->Send()){
         echo "<script language='javascript' type='text/javascript' charset='utf-8'>
                 alert('Sua Mensagem foi gravada e enviada com Sucesso!');
